@@ -1,7 +1,12 @@
 package main
 
-import "github.com/AbdouTlili/go-tools/files"
+import (
+	"fmt"
+
+	files "github.com/AbdouTlili/go-tools/files"
+)
 
 func main() {
-	files.GetFloat("data.txt")
+	tables, _ := files.GetFloat("/home/spoutnik53/tests/go/main/data.txt")
+	fmt.Println(tables)
 }
